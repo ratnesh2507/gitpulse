@@ -23,12 +23,12 @@ export default async function Home() {
       <div className="relative z-10 flex flex-col items-center text-center px-4 max-w-3xl mx-auto">
         {/* Badge */}
         <div className="mb-6 px-4 py-1.5 rounded-full border border-[#238636]/40 bg-[#238636]/10 text-[#3fb950] text-sm font-medium tracking-wide">
-          GitHub Analytics Dashboard
+          GitPulse
         </div>
 
         {/* Heading */}
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
-          Your GitHub,{" "}
+          Your GitHub pulse,{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3fb950] to-[#1f6feb]">
             visualized.
           </span>
@@ -49,6 +49,7 @@ export default async function Home() {
             { label: "Repo Stats", desc: "Stars, forks & languages" },
             { label: "Activity", desc: "Contribution patterns" },
             { label: "Insights", desc: "Profile health score" },
+            { label: "AI Roast", desc: "Brutally honest insights" },
           ].map((item) => (
             <div
               key={item.label}

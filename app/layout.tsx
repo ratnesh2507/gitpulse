@@ -6,8 +6,12 @@ import Providers from "@/providers/Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GitHub Analytics",
-  description: "Beautiful analytics dashboard for your GitHub profile",
+  title: "GitPulse",
+  description:
+    "Your GitHub activity, visualized. With AI-powered profile insights.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
