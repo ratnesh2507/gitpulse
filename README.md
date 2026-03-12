@@ -4,6 +4,8 @@
 
 GitPulse is a full-stack GitHub analytics dashboard that gives developers a beautiful, data-rich view of their GitHub profile — topped off with an AI-powered roast of their coding habits.
 
+![GitPulse Dashboard](public/image.png)
+
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?style=flat-square&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
