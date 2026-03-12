@@ -63,7 +63,7 @@ export default function RoastModal({
         const text = decoder.decode(value);
         setRoast((prev) => prev + text);
       }
-    } catch (err) {
+    } catch {
       setError("Something went wrong. Try again.");
       hasRoasted.current = false;
     } finally {

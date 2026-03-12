@@ -16,8 +16,8 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     async jwt({ token, account, profile }) {
       if (account) {
-        token.accessToken = account.access_token || "";
-        token.username = (profile as any)?.login;
+        token.accessToken = account.access_token ?? "";
+        token.username = (profile as { login?: string })?.login ?? "";
       }
       return token;
     },
