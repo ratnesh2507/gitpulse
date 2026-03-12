@@ -30,7 +30,6 @@ type Props = {
 export default function DashboardClient({
   user,
   repos,
-  topRepos,
   languageStats,
   activityData,
   profileScore,
@@ -171,7 +170,7 @@ export default function DashboardClient({
             <LanguageChart data={languageStats} />
           </div>
           <div className="md:col-span-2">
-            <TopRepos repos={topRepos} />
+            <TopRepos repos={repos} />
           </div>
         </div>
       </div>
