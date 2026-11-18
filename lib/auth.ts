@@ -6,6 +6,9 @@ export const authOptions: NextAuthOptions = {
     GithubProvider({
       clientId: process.env.GITHUB_CLIENT_ID!,
       clientSecret: process.env.GITHUB_CLIENT_SECRET!,
+      // GitHub now sends an "iss" parameter on the OAuth callback; next-auth 4.24.13
+      // has no issuer for it and throws "issuer must be configured". Newer 4.24.x sets this itself.
+      issuer: "https://github.com/login/oauth",
       authorization: {
         params: {
           scope: "read:user",
